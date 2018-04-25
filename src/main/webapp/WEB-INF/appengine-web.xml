@@ -1,5 +1,5 @@
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-    <application>WILL_BE_REPLACE_WITH_PROJECT_ID</application>
+    <application>kotlin-gcp-001</application>
     <version>1</version>
     <threadsafe>true</threadsafe>
     <runtime>java8</runtime>
