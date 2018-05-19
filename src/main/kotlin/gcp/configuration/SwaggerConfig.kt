@@ -8,10 +8,10 @@ import springfox.documentation.spi.DocumentationType.SWAGGER_2
 import springfox.documentation.spring.web.plugins.Docket
 
 @Configuration
-open class SwaggerConfig {
+class SwaggerConfig {
 
     @Bean
-    open fun configSwagger() = Docket(SWAGGER_2)
+    fun configSwagger() = Docket(SWAGGER_2)
             .select()
             .apis(RequestHandlerSelectors.basePackage("gcp.entrypoints"))
             .paths(PathSelectors.any())
