@@ -1,9 +1,9 @@
 package gcp.entrypoints
 
+import gcp.domain.model.Message
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
-data class Message(val text: String, val priority: String)
 
 @RestController
 class MessageController {
