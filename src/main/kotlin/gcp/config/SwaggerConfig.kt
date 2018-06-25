@@ -11,9 +11,9 @@ import springfox.documentation.spring.web.plugins.Docket
 class SwaggerConfig {
 
     @Bean
-    fun configSwagger() = Docket(SWAGGER_2)
+    fun configSwagger(): Docket = Docket(SWAGGER_2)
             .select()
             .apis(RequestHandlerSelectors.basePackage("gcp.entrypoints"))
             .paths(PathSelectors.any())
-            .build()!!
+            .build()
 }
